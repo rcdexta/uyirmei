@@ -11,7 +11,7 @@ end
 
 include GLI::App
 
-program_desc 'Basic coding constructs for Tamizh language'
+program_desc 'Experimental programming language in Tamizh'
 
 version Agaram::VERSION
 

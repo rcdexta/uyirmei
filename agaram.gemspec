@@ -7,7 +7,7 @@ spec = Gem::Specification.new do |s|
   s.email = 'rc.chandru@gmail.com'
   s.homepage = 'https://rcdexta.github.io/agaram'
   s.platform = Gem::Platform::RUBY
-  s.summary = 'Basic coding constructs for Tamizh language'
+  s.summary = 'Experimental programming language in Tamizh'
   s.files = `git ls-files`.split("
 ")
   s.require_paths << 'lib'
