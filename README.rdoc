@@ -1,6 +1,0 @@
-= agaram
-
-Describe your project here
-
-:include:agaram.rdoc
-
