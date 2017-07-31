@@ -1,6 +1,6 @@
 # உயிர்மெய் 
 
-[Uyirmei: *The soul and body elements of the tamil language*]
+[Uyirmei]
 
 > Experimental programming language in Tamizh
 
