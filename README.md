@@ -18,7 +18,7 @@ Let us look at sample programs before introducing the *limited* language constru
 
 2. Generate prime numbers upto n
 
-![alt tag](https://raw.githubusercontent.com/rcdexta/uyirmei/master/assets/prime.png)
+![alt tag](https://raw.githubusercontent.com/rcdexta/uyirmei/master/assets/prime-sm.png)
 
 Had to add screenshots since the language grammar is not supported by github. You can check out the code in the [examples](https://github.com/rcdexta/uyirmei/tree/master/examples) directory
 
@@ -35,3 +35,21 @@ Had to add screenshots since the language grammar is not supported by github. Yo
 | அச்சு   | print | print with a newline |
 | மெய்   | true |  |
 | பொய்   | false | |
+
+#### Installation
+
+To run the interpreter, install the gem
+
+```bash
+$ gem install uyirmei
+```
+
+Run the code (with extension `.um`) using the following command
+
+```bash
+$ uyirmei run examples/prime.um
+```
+
+#### LICENSE
+ 
+MIT
