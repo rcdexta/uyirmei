@@ -6,12 +6,12 @@ module Kernel
   end
 end
 
-define_method(:சாற்று) { |random_function_name|
+define_method(:சாற்று) { |func_name|
   var_name = local_variables.find do |local_var|
-    local_var != :random_function_name && eval(local_var.to_s) == random_function_name
+    local_var != :func_name && eval(local_var.to_s) == func_name
   end
   define_method(var_name) { |*args|
-    send(random_function_name, *args)
+    send(func_name, *args)
   }
 }
 
@@ -19,9 +19,9 @@ def வினை(*args, &block)
   func_name = :"func_#{rand(1000000)}"
 
   klass = Class.new { attr_accessor *args }
-  function_block = Proc.new { |*arg_values|
+  function_block = Proc.new { |*arguments|
     obj = klass.new
-    args.zip(arg_values).each {|arg, arg_value| obj.send(:"#{arg}=", arg_value) }
+    args.zip(arguments).each {|arg, arg_value| obj.send(:"#{arg}=", arg_value) }
     obj.instance_eval(&block)
   }
 
