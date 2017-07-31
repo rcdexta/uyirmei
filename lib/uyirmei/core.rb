@@ -34,6 +34,14 @@ def எனில்(val, &proc)
   yield if val
 end
 
+def மெய்
+  true
+end
+
+def பொய்
+  false
+end
+
 def இல்லைஎனில்(val, &proc)
   yield unless val
 end
