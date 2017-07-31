@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 require 'gli'
 begin # XXX: Remove this begin/rescue before distributing your app
-require 'agaram'
+require 'uyirmei'
 rescue LoadError
-  STDERR.puts "In development, you need to use `bundle exec bin/agaram` to run your app"
+  STDERR.puts "In development, you need to use `bundle exec bin/uyirmei` to run your app"
   STDERR.puts "At install-time, RubyGems will make sure lib, etc. are in the load path"
-  STDERR.puts "Feel free to remove this message from bin/agaram now"
+  STDERR.puts "Feel free to remove this message from bin/uyirmei now"
   exit 64
 end
 
@@ -13,7 +13,7 @@ include GLI::App
 
 program_desc 'Experimental programming language in Tamizh'
 
-version Agaram::VERSION
+version Uyirmei::VERSION
 
 subcommand_option_handling :normal
 arguments :strict
@@ -35,12 +35,12 @@ pre do |global,command,options,args|
   true
 end
 
-desc 'Run a agaram program'
+desc 'Run a uyirmei program'
 arg 'filename'
 command :run do |c|
   c.action do |global_options,options,args|
     file_path =  "#{Dir.pwd}/#{args[0]}"
-    AgLoader.execute file_path
+    UyirMeiLoader.execute file_path
   end
 end
 
@@ -53,7 +53,8 @@ end
 on_error do |exception|
   # Error logic here
   # return false to skip default error handling
-  p exception.backtrace
+  puts exception
+  exception.backtrace.each { |line| puts line }
   true
 end
 

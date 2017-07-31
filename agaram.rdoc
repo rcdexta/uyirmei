@@ -1,5 +1,0 @@
-= agaram
-
-Generate this with
-    agaram rdoc
-After you have described your command line interface

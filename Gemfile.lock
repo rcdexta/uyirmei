@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    agaram (0.0.1)
+    uyirmei (0.0.1)
       gli (= 2.16.0)
 
 GEM
@@ -58,11 +58,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  agaram!
   aruba
   pry-byebug
   rake
   rdoc
+  uyirmei!
 
 BUNDLED WITH
    1.14.6

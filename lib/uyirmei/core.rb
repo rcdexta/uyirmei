@@ -30,8 +30,12 @@ def வினை(*args, &block)
   func_name
 end
 
-def எனில்(val, &block)
+def எனில்(val, &proc)
   yield if val
+end
+
+def இல்லைஎனில்(val, &proc)
+  yield unless val
 end
 
 def நிறுத்து(val)
