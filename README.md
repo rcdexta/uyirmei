@@ -16,9 +16,21 @@ Let us look at sample programs before introducing the *limited* language constru
 
 ![alt tag](https://raw.githubusercontent.com/rcdexta/uyirmei/master/assets/odd_even.png)
 
+Output: 
+இரட்டை
+ஒற்றை
+இரட்டை
+
 2. Generate prime numbers upto n
 
 ![alt tag](https://raw.githubusercontent.com/rcdexta/uyirmei/master/assets/prime-sm.png)
+
+Output: 
+3
+5
+7
+11
+13
 
 Had to add screenshots since the language grammar is not supported by github. You can check out the code in the [examples](https://github.com/rcdexta/uyirmei/tree/master/examples) directory
 
