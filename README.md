@@ -1,12 +1,12 @@
 # உயிர்மெய் 
 
-[Uyirmei]
+Uyirmei
 
-> Experimental programming language in Tamizh
+*Experimental programming language in Tamizh*
 
 #### Why
 
-This is an experimental side project to validate if a new language grammar can be supported with just ruby metaprogramming constructs. I have used all tricks and ruby hacks to check if a new language parser can be supported using a ruby executable. Consider this a starting point for programming language enthusiast to define your own grammar and extend programming constructs in Tamizh. If you are serious about supporting full scale language features, you should look at a resource like [createyourproglang](http://createyourproglang.com/), metaprogramming can only take you so far.. :)
+This is an experimental side project to validate if a new language grammar can be supported with just ruby metaprogramming constructs. I have used all tricks and hacks in ruby playbook to check if a new language parser can be supported. Consider this a starting point for a programming language enthusiast to define your own grammar and extend programming constructs in Tamizh. If you are serious about supporting full scale language features, you should look at a resource like [createyourproglang](http://createyourproglang.com/), metaprogramming can only take you so far.. :)
 
 #### Show me the code
 
@@ -32,7 +32,7 @@ Output:
 11
 13
 
-Had to add screenshots since the language grammar is not supported by github. You can check out the code in the [examples](https://github.com/rcdexta/uyirmei/tree/master/examples) directory
+Had to add screenshots since the language grammar is not supported by github. You can check out the code in the [examples](https://github.com/rcdexta/uyirmei/tree/master/examples) folder
 
 #### Language constructs
 
