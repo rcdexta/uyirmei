@@ -12,12 +12,26 @@ This is an experimental side project to validate if a new language grammar can b
 
 Let us look at sample programs before introducing the *limited* language constructs formally..
 
-<pre class="code"><span style="color: blue">சாற்று</span> ஒற்றை_இரட்டை_படை <span class="pl-k">=</span> வினை(எண்) {
-  எண் <span class="pl-k">%</span> <span class="pl-c1">2</span> <span class="pl-k">==</span> <span class="pl-c1">0</span> <span class="pl-k">?</span> <span class="pl-s"><span class="pl-pds">'</span>இரட்டை<span class="pl-pds">'</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>ஒற்றை<span class="pl-pds">'</span></span>
-}
+1. Determine if a number is odd or not
 
-அச்சு ஒற்றை_இரட்டை_படை(<span class="pl-c1">4</span>)
-அச்சு ஒற்றை_இரட்டை_படை(<span class="pl-c1">5</span>)
-அச்சு ஒற்றை_இரட்டை_படை(<span class="pl-c1">10</span>)
-</pre>
+![alt tag](https://raw.githubusercontent.com/rcdexta/uyirmei/master/assets/odd_even.png)
 
+2. Generate prime numbers upto n
+
+![alt tag](https://raw.githubusercontent.com/rcdexta/uyirmei/master/assets/prime.png)
+
+Had to add screenshots since the language grammar is not supported by github. You can check out the code in the [examples](https://github.com/rcdexta/uyirmei/tree/master/examples) directory
+
+#### Language constructs
+
+| In Uyirmei  | Equivalent keyword | Notes   |
+|---|---|---|
+|சாற்று   | let   |  Define a variable  |
+|வினை   | function  |  Define a method/routine |
+|எனில்   | if  | execute block if evaluates to true  |
+|இல்லைஎனில்   | unless | execute block if evaluates to false  |
+| மீண்டும்   | loop | execute given block till break |
+| நிறுத்து   | break | break out of loop if condition passes |
+| அச்சு   | print | print with a newline |
+| மெய்   | true |  |
+| பொய்   | false | |
