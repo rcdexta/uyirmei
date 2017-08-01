@@ -11,8 +11,7 @@ class UyirMeiLoader
     end
 
     def execute(file)
-      File.open(SRC,"w") { |f| f.puts [CORE_FILE, file].map{ |s| IO.read(s) }}
-      replace(SRC, 'பின்கொடு', 'return')
+      File.open(SRC,"w") { |f| f.puts [CORE_FILE, file].map{ |s| IO.read(s) }}      
       require "./#{SRC}"
       File.delete(SRC)
     end
